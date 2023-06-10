@@ -10,5 +10,4 @@ def add_args(argv):
 
 
 if __name__ == "__main__":
-    output = add_args(sys.argv[1:])
-    print(output)
+    print(add_args(sys.argv[1:]))
