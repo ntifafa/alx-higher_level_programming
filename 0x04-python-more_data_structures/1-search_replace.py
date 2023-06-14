@@ -2,6 +2,6 @@
 
 def search_replace(my_list, search, replace):
     for i, val in enumerate(my_list):
-        if val == 2:
-            my_list[i] = 89
+        if val == search:
+            my_list[i] = replace
     return my_list
