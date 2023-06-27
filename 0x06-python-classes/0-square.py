@@ -1,6 +1,6 @@
-"""defines a square"""
+"""Defines a square"""
 
 
 class Square:
-    """doesn't do anything"""
+    """Doesn't do anything"""
     pass
