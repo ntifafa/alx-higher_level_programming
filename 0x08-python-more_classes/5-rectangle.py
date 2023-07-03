@@ -16,7 +16,7 @@ class Rectangle:
     @property
     def width(self):
         """Retrieves private instance attribute"""
-        return(self.__width)
+        return self.__width
 
     @width.setter
     def width(self, val):
@@ -35,7 +35,7 @@ class Rectangle:
     @property
     def height(self):
         """Retrieves private instance attribute"""
-        return(self.__height)
+        return self.__height
 
     @height.setter
     def height(self, val):
@@ -53,13 +53,13 @@ class Rectangle:
 
     def area(self):
         """Computes the area of a rectangle"""
-        return(self.__height * self.__width)
+        return self.__height * self.__width
 
     def perimeter(self):
         """Computes the perimeter of a rectangle"""
         if self.__width == 0 or self.__height == 0:
             return(0)
-        return((self.__height + self.__width) * 2)
+        return (self.__height + self.__width) * 2
 
     def __str__(self):
         """Prints the actual representation of the rectangle"""
@@ -68,11 +68,11 @@ class Rectangle:
         rect_str = ""
         for i in range(self.__height):
             rect_str += "#" * self.__width + "\n"
-        return(rect_str[:-1])
+        return rect_str[:-1]
 
     def __repr__(self):
         """Reproduce a string form of an object"""
-        return(f"Rectangle({self.width}, {self.height})")
+        return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
         """Detects instance deletion"""
