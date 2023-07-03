@@ -79,7 +79,7 @@ class Rectangle:
 
     def __repr__(self):
         """Reproduce a string form of an object"""
-        return(f"Rectangle({self.width}, {self.height})")
+        return f"Rectangle({self.width}, {self.height})"
 
     def __del__(self):
         """Detects instance deletion"""
