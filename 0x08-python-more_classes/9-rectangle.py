@@ -107,4 +107,4 @@ class Rectangle:
         Returns:
             Rectangle: new rectangle instance
         """""
-        return Rectangle(size, size)
+        return cls(size, size)
