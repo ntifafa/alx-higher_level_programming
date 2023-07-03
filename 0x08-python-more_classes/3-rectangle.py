@@ -16,7 +16,7 @@ class Rectangle:
     @property
     def width(self):
         """Retrieves private instance attribute"""
-        return(self.__width)
+        return self.__width
 
     @width.setter
     def width(self, val):
@@ -35,7 +35,7 @@ class Rectangle:
     @property
     def height(self):
         """Retrieves private instance attribute"""
-        return(self.__height)
+        return self.__height
 
     @height.setter
     def height(self, val):
@@ -58,8 +58,8 @@ class Rectangle:
     def perimeter(self):
         """Computes the perimeter of a rectangle"""
         if self.__width == 0 or self.__height == 0:
-            return(0)
-        return((self.__height + self.__width) * 2)
+            return 0
+        return (self.__height + self.__width) * 2
 
     def __str__(self):
         """Prints the actual representation of the rectangle"""
