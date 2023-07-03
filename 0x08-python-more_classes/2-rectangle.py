@@ -16,7 +16,7 @@ class Rectangle:
     @property
     def width(self):
         """Retrives private instance attribute"""
-        return(self.__width)
+        return self.__width
 
     @width.setter
     def width(self, val):
@@ -35,7 +35,7 @@ class Rectangle:
     @property
     def height(self):
         """Retrives private instance attribute"""
-        return(self.__height)
+        return self.__height
 
     @height.setter
     def height(self, val):
@@ -59,4 +59,4 @@ class Rectangle:
         """Computes the area of a rectangle"""
         if self.__width == 0 or self.__height == 0:
             return(0)
-        return((self.__height + self.__width) * 2)
+        return (self.__height + self.__width) * 2
