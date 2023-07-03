@@ -71,4 +71,5 @@ class Rectangle:
         return(rect_str[:-1])
 
     def __repr__(self):
+        """Reproduce a string form of an object"""
         return(f"Rectangle({self.width}, {self.height})")
