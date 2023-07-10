@@ -20,4 +20,4 @@ class Square(Rectangle):
         returns the string representation
         of the square object
         """
-        return f"[{type(self).__name__} {self.__size}/{self.__size}]"
+        return f"[{type(self).__name__}] {self.__size}/{self.__size}"
