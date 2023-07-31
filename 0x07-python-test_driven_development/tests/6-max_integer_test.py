@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """The print square module."""
 import unittest
-from your_module import max_integer
+max_integer = __import__('6-max_integer').max_integer
 
 
 class MaxIntegerTestCase(unittest.TestCase):
