@@ -3,22 +3,27 @@
 
 
 def text_indentation(text):
-    """
-    Prints a text with 2 new lines after each of these characters: ., ? and :
+    '''This function prints a text with 2 new lines after each ".", "?", or ":"
+    Args:
+        text (str): The string to be printed
+    Raises:
+        TypeError: If text is not a string
+    '''
 
-    argument: text: The input text to be processed
-    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    punctuations = ['.', '?', ':']
-    lines = text.splitlines()
+    count = 0
+    while count < len(text) and text[count] == " ":
+        count = count + 1
 
-    for line in lines:
-        line = line.strip()  # Remove leading and trailing whitespace
-        if line:  # Skip empty lines
-            for char in line:
-                print(char, end='')
-                if char in punctuations:
-                    print('\n\n', end='')
-            print()
+    while count < len(text):
+        print(text[count], end="")
+        if text[count] == "\n" or text[count] in ".?:":
+            if text[count] in ".?:":
+                print("\n")
+            count = count + 1
+            while count < len(text) and text[count] == " ":
+                count = count + 1
+            continue
+        count = count + 1
