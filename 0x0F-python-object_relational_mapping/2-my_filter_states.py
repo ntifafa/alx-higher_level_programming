@@ -11,7 +11,7 @@ from sys import argv
 
 if __name__ == '__main__':
     """
-    Access database and get 
+    Access database and get
     the states from the database.
     """
     db_connect = db.connect(host="localhost", port=3306,
