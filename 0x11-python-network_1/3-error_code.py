@@ -18,4 +18,4 @@ if __name__ == "__main__":
             print(response.read().decode('utf-8'))
     # handle the error
     except urllib.error.HTTPError as e:
-        print(f"Error code: {e.code}")
+        print("Error code: {}".format(e.code))
