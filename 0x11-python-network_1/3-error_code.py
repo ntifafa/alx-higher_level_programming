@@ -4,9 +4,9 @@ takes a URL, sends a request to the URL and displays
 the body of the response (decoded in utf-8), while
 managing the error.
 """
+import sys
 import urllib.request
 import urllib.error
-import sys
 
 
 if __name__ == "__main__":
